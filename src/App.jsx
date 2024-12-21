@@ -60,7 +60,7 @@ const App = () => {
         category: chance.pickone(categories),
         price: chance.integer({ min: 10, max: 9999 }),
         rating: parseFloat(chance.floating({ min: 0, max: 5, fixed: 1 })),
-        imageUrl: `/images/${chance.pickone(imageNames)}`,
+        imageUrl: `/Lamoda/images/${chance.pickone(imageNames)}`,
       });
     }
     return items;
